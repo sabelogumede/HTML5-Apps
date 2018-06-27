@@ -1,0 +1,90 @@
+<!doctype html>
+<title>Drink club Winery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- we are using fromspree connection -->
+<form id="form" action="https://formspree.io/iamsabelogumede@gmail.com" method="POST">
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Name</label>
+        <input autofocus autocomplete="given-name" placeholder="Enter Your Fullname" id="name" type="text" name="name" required>
+
+        <label for="phone">Phone Number</label>
+        <input autocomplete="tel" placeholder="Contact Number" id="phone" type="tel" name="phone" required>
+
+        <label for="email">Email</label>
+        <input autocomplete="email" placeholder="Email address" id="email" type="email" name="email" required>
+
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday">
+    </fieldset>
+
+    <fieldset>
+        <legend>Wine Order</legend>
+
+        <label for="merlot">How # Merlot?</label>
+        <input id="merlot" type="name" min="0" max="100" pattern="[0-9]*" name="merlot">
+
+        <label for="champagne">How # Champagne?</label>
+        <input id="champagne" type="number" min="0" max="100" pattern="[0-9]*" name="champagne">
+
+        <label for="malbec">How # Malbec?</label>
+        <input id="malbec" type="range" min="0" max="100" pattern="[0-9]*" name="malbec">
+
+        <label for="time">Prefered Time to receive the order?</label>
+        <input id="time" type="time" name="time">
+
+        <section class="nowrap">
+            <input id="gift" type="checkbox" name="gift" value="gift">
+            <label for="gift">This is a gift</label>
+        </section>
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <optgroup label="Europe">
+                <option value="uk">United Kingdom</option>
+                <option value="ie">Ireland</option>
+                <option value="is">Iceland</option>
+                <option value="es">Spain</option>
+                <option value="fr" selected>France</option>
+            </optgroup>
+            <optgroup label="Americas">
+                <option value="us">United States</option>
+            </optgroup>
+        </select>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Shipping Details</legend>
+
+        <section class="nowrap">
+            <input id="standard" type="radio" name="shipping-type" value="standard">
+            <label for="standard">Standard Shipping (R20)</label>
+        </section>
+        <section class="nowrap">
+            <input id="dhl" type="radio" name="shipping-type" value="dhl">
+            <label for="dhl">DHL Shipping (R50)</label>
+        </section>
+
+        <label for="street">Street</label>
+        <input autocomplete="address-level1" placeholder="Enter your street name" id="street" type="text" name="street" required>
+
+        <label for="streetnumber">Street #</label>
+        <!-- ios - pattern="[0-9]*" - for showing number keypads -->
+        <input placeholder="Street Number" id="streetnumber" type="number" pattern="[0-9]*" name="street" required>
+
+        <label for="street">City and State/Province</label>
+        <input type="text" id="city" name="city">
+
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments"></textarea>
+    </fieldset>
+
+    <!-- button -->
+    <input type="submit" value="Order">
+</form>

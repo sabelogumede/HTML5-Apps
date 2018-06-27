@@ -1,0 +1,50 @@
+label, input {
+    display: block;
+}
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+/* for every input area that is required */
+input:required {
+    border-right: 10px solid gray;
+}
+input:optional {
+    border-right: 10px solid silver;
+}
+input:focus:invalid {
+    border-left: 10px solid red;
+}
+input:focus:valid {
+    border-left: 10px solid green;
+}
+
+.nowrap label, .nowrap input {
+    display: inline;
+    width: auto;
+}
+.nowrap input:optional, {
+    border: 0;
+}
+
+textarea {
+    width: 95%;
+    height: 150px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    background-color: #DDD;
+}
+
+
+
+/* css selector - button target without using #id */
+input[type=submit] {
+    font-size: large;
+    width: 100%;
+    padding: 15px;
+    background-color: blue;
+    margin-top: 5px;
+}
