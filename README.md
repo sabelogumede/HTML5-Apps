@@ -1,7 +1,7 @@
 # HTML5-Apps
 HTML5 and CSS3 mini mobile ui app elements (8-total)
 
-- To have a better viewing experience please use a mobile screen size of your browser (320 - 736px) exept for the "banner ui file"
+- To have a better viewing experience please use a mobile screen size of your browser (320 - 736px) except for the "banner ui file"
 
 <!-- Projects -->
 
@@ -15,7 +15,7 @@ HTML5 and CSS3 mini mobile ui app elements (8-total)
     - Three page mobile coffee business website, with rich content media (mobile ui)
 
 4. GEO BUSINESS LOCATOR:
-    - One page business locator, users google map Api to get user location and display listered restarant business near.
+    - One page business locator, users google map Api to get user location and display listered restarant business nearby.
 
 5. GAME BLOG:
     - Two page retro gaming blog (mobile ui)
